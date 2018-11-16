@@ -5,7 +5,7 @@
 
 #### 一种为了存储一个元素集合，简称集合: ####
 
-![Collection集合框架](https://github.com/Aroue/Lee/blob/master/src/Photo/Collection.png)
+![Collection集合框架](https://github.com/Aroue/Lee-notes/blob/master/images/Collection.png)
 
 * Set：用于存储一组不重复的元素
 * List：由元素构成的有序的集合
