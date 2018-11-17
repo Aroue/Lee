@@ -3,7 +3,7 @@
 
 *java集合框架支持以下两种类型的容器：*
 
-#### 一种为了存储一个元素集合，简称集合: ####
+#### 一、一种为了存储一个元素集合，简称集合: ####
 
 ![Collection集合框架](https://github.com/Aroue/Lee-notes/blob/master/images/Collection.png)
 
@@ -12,9 +12,9 @@
 * Queue：用于存储用先进先出方式处理的对象
 
 
-## 一、Set ##
-
-###  1、HashSet ###
+## 1、Set ##
+![Set](https://github.com/Aroue/Lee-notes/blob/master/images/Set.png)
+###  1.1、HashSet ###
 hashSet类是实现了Set接口的一个具体类，用来存储一个元素之间互不相同的集合
 
 
