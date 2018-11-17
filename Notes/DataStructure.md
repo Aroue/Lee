@@ -21,7 +21,7 @@
 ### 1、Set ###
 ![Set](https://github.com/Aroue/Lee-notes/blob/master/images/set.png)
 ####  1.1、HashSet ####
-hashSet类是实现了Set接口的一个具体类，用来存储一个元素之间互不相同的集合
+hashSet类是实现了Set接口的一个具体类，用来存储一个元素之间互不相同的集合,内部基于HashMap实现，对于插入的元素，不维持元素的有序性
 
 
  ## 二、一种是为了存储键/值对，称为图: ##
