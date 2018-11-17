@@ -19,7 +19,7 @@
 
 
 ### 1、Set ###
-![Set](https://github.com/Aroue/Lee-notes/blob/master/images/Set.png)
+![Set](https://github.com/Aroue/Lee-notes/blob/master/images/set.png)
 ####  1.1、HashSet ####
 hashSet类是实现了Set接口的一个具体类，用来存储一个元素之间互不相同的集合
 
