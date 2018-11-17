@@ -1,15 +1,18 @@
 <!-- TOC -->
 
-- [java集合框架](#java集合框架)
+- [一、java集合框架概述](#一java集合框架概述)
     - [1、Set](#1set)
+    - [4、Map](#4map)
+- [二、源码分析](#二源码分析)
+    - [HashSet](#hashset)
 
 <!-- /TOC -->
-# java集合框架 #
+# 一、java集合框架概述 #
 
 *java集合框架支持以下两种类型的容器：*
 
-一种为了存储一个元素集合，简称集合: 
-一种是为了存储键/值对，称为图:
+一种为了存储一个元素集合，简称集合(Collection): 
+一种是为了存储键/值对，称为图(Map):
 
 ![Collection集合框架](https://github.com/Aroue/Lee-notes/blob/master/images/Collection.png)
 
@@ -22,3 +25,12 @@
 * HashSet: hashSet类是实现了Set接口的一个具体类，用来存储一个元素之间互不相同的集合,内部基于HashMap实现，对于插入的元素，不维持元素的有序性
 * LinkedHashSet: 
 * TreeSet: 
+
+## 4、Map ##
+* HashMap: 
+
+# 二、源码分析 #
+
+
+
+## HashSet ##
