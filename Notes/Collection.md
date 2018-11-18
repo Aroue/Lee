@@ -1,9 +1,12 @@
 <!-- TOC -->
 
 - [一、java集合框架概述](#一java集合框架概述)
-    - [1、Set](#1set)
-    - [4、Map](#4map)
+    - [Set](#set)
+    - [List](#list)
+    - [Queue](#queue)
+    - [Map](#map)
 - [二、源码分析](#二源码分析)
+    - [HashMap](#hashmap)
     - [HashSet](#hashset)
 
 <!-- /TOC -->
@@ -21,16 +24,23 @@
 * Queue：用于存储用先进先出方式处理的对象
 
 
-## 1、Set ##
+## Set ##
 * HashSet: hashSet类是实现了Set接口的一个具体类，用来存储一个元素之间互不相同的集合,内部基于HashMap实现，对于插入的元素，不维持元素的有序性
 * LinkedHashSet: 
 * TreeSet: 
 
-## 4、Map ##
+## List ##
+
+## Queue ##
+
+## Map ##
 * HashMap: 
+* LinkedHashMap: 
+* TreeMap:
 
 # 二、源码分析 #
 
-
+## HashMap ##
 
 ## HashSet ##
+
