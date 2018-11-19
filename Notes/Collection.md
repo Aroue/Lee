@@ -47,16 +47,10 @@
 ## HashMap ##
 
 ### 1、数据结构 ###
-&nbsp;HashMap类内部有一个数组，插入HashMap的键/值对就存储在这个数组中
->  /**
->     * The table, initialized on first use, and resized as
->     * necessary. When allocated, length is always a power of two.
->     * (We also tolerate length zero in some operations to allow
->     * bootstrapping mechanics that are currently not needed.)
->     */
->    ``` transient Node<K,V>[] table; ```
+&nbsp;HashMap类内部有一个数组，插入HashMap的键/值对就存储在这个数组中
+> ``` transient Node<K,V>[] table; ```
 
-从内部代码不难看出，HashMap的键值对是由一个数组存储，而数组的每一项又是一个链表的结构
+从内部代码不难看出，HashMap的键值对是由一个数组存储，而数组的每一项又是一个链表的结构
 _HashMap实际上是一个“链表散列”的数据结构，即数组和链表的结合体_
 
 
