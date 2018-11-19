@@ -56,6 +56,10 @@
 >     */
 >    ``` transient Node<K,V>[] table; ```
 
+从内部代码不难看出，HashMap的键值对是由一个数组存储，而数组的每一项又是一个链表的结构
+_HashMap实际上是一个“链表散列”的数据结构，即数组和链表的结合体_
+
+
 ## HashSet ##
 
 > This is the first level of quoting.
