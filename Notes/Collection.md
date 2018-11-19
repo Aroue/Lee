@@ -14,7 +14,8 @@
 
 *java集合框架支持以下两种类型的容器：*
 
-一种为了存储一个元素集合，简称集合(Collection): 
+一种为了存储一个元素集合，简称集合(Collection):
+
 一种是为了存储键/值对，称为图(Map):
 
 ![Collection集合框架](https://github.com/Aroue/Lee-notes/blob/master/images/Collection.png)
