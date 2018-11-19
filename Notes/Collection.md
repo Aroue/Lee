@@ -19,10 +19,12 @@
 
 ![Collection集合框架](https://github.com/Aroue/Lee-notes/blob/master/images/Collection.png)
 
+![Collection集合框架](https://github.com/Aroue/Lee-notes/blob/master/images/Map.png)
+
 * Set：用于存储一组不重复的元素
 * List：由元素构成的有序的集合
 * Queue：用于存储用先进先出方式处理的对象
-
+* map: 一种依照键/值对存储元素的容器
 
 ## Set ##
 * HashSet: hashSet类是实现了Set接口的一个具体类，用来存储一个元素之间互不相同的集合,内部基于HashMap实现，对于插入的元素，不维持元素的有序性
