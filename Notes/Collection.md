@@ -7,6 +7,7 @@
     - [Map](#map)
 - [二、源码分析](#二源码分析)
     - [HashMap](#hashmap)
+        - [1、数据结构](#1数据结构)
     - [HashSet](#hashset)
 
 <!-- /TOC -->
@@ -45,5 +46,21 @@
 
 ## HashMap ##
 
+### 1、数据结构 ###
+&nbsp;HashMap类内部有一个数组，插入HashMap的键/值对就存储在这个数组中
+>  /**
+>     * The table, initialized on first use, and resized as
+>     * necessary. When allocated, length is always a power of two.
+>     * (We also tolerate length zero in some operations to allow
+>     * bootstrapping mechanics that are currently not needed.)
+>     */
+>    ``` transient Node<K,V>[] table; ```
+
 ## HashSet ##
+
+> This is the first level of quoting.
+>
+>  This is nested blockquote.
+>
+> Back to the first level.
 
