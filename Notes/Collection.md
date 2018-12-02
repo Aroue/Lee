@@ -7,7 +7,7 @@
     - [Map](#map)
 - [二、源码分析](#二源码分析)
     - [HashMap](#hashmap)
-            - [1、数据结构](#1数据结构)
+        - [1、数据结构](#1数据结构)
     - [HashSet](#hashset)
 
 <!-- /TOC -->
@@ -46,7 +46,7 @@
 
 ## HashMap ##
 
-#### 1、数据结构 ####
+### 1、数据结构 ###
 &nbsp;HashMap类内部有一个数组，插入HashMap的键/值对就存储在这个数组中
 ```
 transient Node<K,V>[] table; 
