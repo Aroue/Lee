@@ -48,7 +48,6 @@
 
 #### 1、数据结构 ####
 &nbsp;HashMap类内部有一个数组，插入HashMap的键/值对就存储在这个数组中
-> transient Node<K,V>[] table; 
 ```
 transient Node<K,V>[] table; 
 ```
