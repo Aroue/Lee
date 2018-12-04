@@ -24,4 +24,16 @@
 再次，在剩下的元素中 找到最小的元素，将它与数组的第二个元素交换位置。如此往复，直到将整个数组排序。
 这种方法 叫做选择排序，因为它在不断地选择剩余元素之中的最小者。
 java 实现代码：
+```java
+for (int i = 0; i < data.length;i++) {
+            for (int j = i + 1;j < data.length;j++){
+                if (data[j] < data[i]) {
+                    int temp = data[i];
+                    data[i] = data[j];
+                    data[j] = temp;
+                }
+            }
+        }
+```
+
 ![选择排序](https://github.com/Aroue/Lee-notes/blob/master/images/selection-sort.png) 
