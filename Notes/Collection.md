@@ -21,8 +21,6 @@
 
 ![Collection集合框架](https://github.com/Aroue/Lee-notes/blob/master/images/Collection.png)
 
-![Collection集合框架](https://github.com/Aroue/Lee-notes/blob/master/images/Map.png)
-
 * Set：用于存储一组不重复的元素
 * List：由元素构成的有序的集合
 * Queue：用于存储用先进先出方式处理的对象
