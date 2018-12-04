@@ -35,5 +35,3 @@ for (int i = 0; i < data.length;i++) {
             }
         }
 ```
-
-![选择排序](https://github.com/Aroue/Lee-notes/blob/master/images/selection-sort.png) 
