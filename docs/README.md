@@ -1,3 +1,3 @@
 ##  ✏️ 算法
 
-> An awesome project.
+> > [算法](notes/Algorithm.md)
