@@ -15,7 +15,19 @@
     window.$docsify = {
       name: 'Lee',
       coverpage: true,
-      repo: 'https://github.com/Aroue/Lee.git'
+      repo: 'https://github.com/Aroue/Lee.git',
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: [], // or 'auto'
+        placeholder: 'Type to search',
+
+        // 支持本地化
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/': 'Type to search'
+        },
+      }
+
     }
   </script>
   <script src="//unpkg.com/docsify"></script>
