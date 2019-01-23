@@ -24,10 +24,6 @@ body,
     background-color: rgba(243, 242, 238, 1) !important;
 }
 
-body {
-    /*font-family: Microsoft YaHei, Source Sans Pro, Helvetica Neue, Arial, sans-serif !important;*/
-}
-
 .markdown-section>p {
     font-size: 16px !important;
 }
@@ -37,7 +33,3 @@ body {
     font-size: .9rem !important;
 
 }
-
-/*.anchor span {
-    color: rgb(66, 185, 131);
-}*/
