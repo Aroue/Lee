@@ -10,5 +10,4 @@
 * ...
 
 [GitHub](https://github.com/Aroue/Lee)
-
 [Get Started](README.md)
