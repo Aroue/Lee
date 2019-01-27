@@ -15,3 +15,6 @@
 <!-- 背景图片 -->
 
 ![](_media/background.jpg)
+<!-- 背景色 -->
+
+![color](#f0f0f0)
