@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://docsify.js.org">
-    <img alt="docsify" src="./docs/_media/Lee.png">
+  <a href="http://www.happlee.club/Lee/">
+    <img alt="Lee" src="./docs/_media/Lee.png">
   </a>
 </p>
 
