@@ -8,6 +8,10 @@
   For you, a thousand times over.
 </p>
 
+<p align="center">
+  <a href="#license"><img alt="license" src="https://img.shields.io/github/license/Aroue/Lee.svg?style=flat-square"></a>
+
+
 ## :pencil2: &nbsp;Notes ##
 
 ### :pencil2:  &nbsp;[java容器](https://github.com/Aroue/Lee-notes/blob/master/Notes/Collection.md) ###  
