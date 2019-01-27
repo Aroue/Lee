@@ -2,7 +2,7 @@
 
 #  Lee
 
-> Study Notes
+> For you, a thousand times over.
 
 * Algorithm
 * computer system
