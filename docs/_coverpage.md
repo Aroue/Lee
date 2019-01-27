@@ -11,7 +11,3 @@
 
 [GitHub](https://github.com/Aroue/Lee)
 [Get Started](README.md)
-
-<!-- 背景图片 -->
-
-![](_media/background.jpg)
