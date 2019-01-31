@@ -68,9 +68,12 @@ public class Selection extends Sort
 ```
 
 
+
 ### 冒泡排序 ###
 
 它重复地走访过要排序的元素列，依次比较两个相邻的元素，如果他们的顺序（如从大到小、首字母从A到Z）错误就把他们交换过来。走访元素的工作是重复地进行直到没有相邻元素需要交换，也就是说该元素已经排序完成。
+
+冒泡排序是一种稳定排序算法。
 
 ```java
 public class BubbleSort extends Sort{
@@ -96,6 +99,8 @@ public class BubbleSort extends Sort{
 
 插入排序法，就是检查第i个数字，如果在它的左边的数字比它大，进行交换，这个动作一直继续下去，直到这个数字的左边数字比它还要小，就可以停止了。插入排序法主要的回圈有两个变数：i和j，每一次执行这个回圈，就会将第i个数字放到左边恰当的位置去。
 
+插入排序是一种稳定的排序算法。
+
 ```java
 public class Insertion extends Sort{
     // 将data[]按升序排列
@@ -111,4 +116,33 @@ public class Insertion extends Sort{
 ```
 
 
+
+### 希尔排序 ###
+
+希尔排序是一种基于插入排序的快速的排序算法，用于解决插入排序在大规模乱序数组插入很慢的问题。
+
+希尔排序的思想是使数组中任意间隔为 h 的元素都是有序的，这样的数组被称为h有序数组，然后利用插入排序将每个独立的h有序数组排序，最后将h降为1的时候数组有序。
+
+```java
+public class ShellSort extends Sort{
+    public void sort(Comparable[] data) {
+        int N = data.length;
+        int h = 1;
+        while (h < N/3)
+            h = 3 * h + 1; // 1, 4, 13, 40, 121, 364, 1093, ...
+        while (h >= 1)
+        {
+            // 将数组变为h有序
+            for (int i = h; i < N; i++)
+            {
+                // 将data[i]插入到data[i-h], data[i-2*h], data[i-3*h]... 之中
+                for (int j = i; j >= h && less(data[j], data[j-h]); j -= h)
+                    exch(data, j, j-h);
+            }
+
+            h = h/3;
+        }
+    }
+}
+```
 
