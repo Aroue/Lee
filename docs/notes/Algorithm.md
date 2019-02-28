@@ -146,3 +146,42 @@ public class ShellSort extends Sort{
 }
 ```
 
+
+
+### 归并排序
+
+归并排序是一种应用分治法的典型排序算法，其核心思想就是将待排序序列分为 N (>= 2)个子序列，先使每个子序列有序，再应用归并方法将每个有序的子序列归并合成一个有序的序列。
+
+归并排序是一种稳定的排序算法。
+
+
+
+#### 原地归并的抽象方法
+
+归并方法将两个有序的子序列归并合成为一个有序的序列
+
+```java
+private static void merge(Comparable[] a, int lo, int mid, int hi) {
+
+        // 将a[lo..mid] 和 a[mid+1..hi] 归并
+        int i = lo, j = mid + 1;
+
+        for (int k = lo; k <= hi; k++) // 将a[lo..hi]复制到aux[lo..hi]
+            aux[k] = a[k];
+        for (int k = lo; k <= hi; k++) {// 归并回到a[lo..hi]
+            if (i > mid)
+                a[k] = aux[j++];
+            else if (j > hi)
+                a[k] = aux[i++];
+            else if
+                    (less(aux[j], aux[i])) a[k] = aux[j++];
+            else
+                a[k] = aux[i++];
+        }
+    }
+```
+
+
+
+#### 自顶向下的归并排序
+
