@@ -13,7 +13,7 @@
 
 ## :pencil2: &nbsp;Notes ##
 
-- [JAVA容器](https://github.com/Aroue/Lee-notes/blob/master/Notes/Collection.md)   
+- [java 容器](https://github.com/Aroue/Lee-notes/blob/master/Notes/Collection.md)   
 
-- [算 法](https://github.com/Aroue/Lee-notes/blob/master/Notes/Algorithm.md)
+- [算法](https://github.com/Aroue/Lee-notes/blob/master/Notes/Algorithm.md)
 
