@@ -156,7 +156,7 @@ public class ShellSort extends Sort{
 
 
 
-#### 原地归并的抽象方法
+#### 1、原地归并的抽象方法
 
 归并方法将两个有序的子序列归并合成为一个有序的序列
 
@@ -174,7 +174,7 @@ private static void merge(Comparable[] a, int lo, int mid, int hi) {
             else if (j > hi)
                 a[k] = aux[i++];
             else if
-                    (less(aux[j], aux[i])) a[k] = aux[j++];
+                 (less(aux[j], aux[i])) a[k] = aux[j++];
             else
                 a[k] = aux[i++];
         }
@@ -183,5 +183,57 @@ private static void merge(Comparable[] a, int lo, int mid, int hi) {
 
 
 
-#### 自顶向下的归并排序
+#### 2、自顶向下的归并排序
+
+应用分治法的典型算法，每次将数组分为两个数组，分别排序两个子数组，直到数组全部有序
+
+```java
+public class MergeSort extends Sort {
+
+    private static Comparable[] aux; // 归并所需的辅助数组
+
+    public static void sort(Comparable[] a) {
+        aux = new Comparable[a.length]; // 一次性分配空间
+        sort(a, 0, a.length - 1);
+    }
+
+    // 自顶向下的归并排序
+    private static void sort(Comparable[] a, int lo, int hi) { // 将数组a[lo..hi]排序
+        if (hi <= lo) return;
+        int mid = lo + (hi - lo) / 2;
+        sort(a, lo, mid); // 将左半边排序
+        sort(a, mid + 1, hi); // 将右半边排序
+        merge(a, lo, mid, hi); // 归并结果(代码见“原地归并的抽象方法”)
+    }
+}
+```
+
+
+
+#### 3、自底向上的归并排序
+
+先归并那些微型数组，然后再成对归并得到的子数组，直到数组有序
+
+```java
+public class MergeBu extends Sort {
+    private static Comparable[] aux; // 归并所需的辅助数组
+
+    // 自底向上的归并排序
+    static void sort(Comparable[] a) { // 进行lgN次两两归并
+        int N = a.length;
+        aux = new Comparable[N];
+        for (int sz = 1; sz < N; sz = sz + sz)// sz子数组大小
+            for (int lo = 0; lo < N - sz; lo += sz + sz) // lo:子数组索引
+                merge(a, lo, lo + sz - 1, Math.min(lo + sz + sz - 1, N - 1));
+
+    }
+
+}
+```
+
+### 快速排序
+
+
+
+
 
