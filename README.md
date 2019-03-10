@@ -11,9 +11,13 @@
 <p align="center">
   <a href="#license"><img alt="license" src="https://img.shields.io/github/license/Aroue/Lee.svg?style=flat-square"></a>
 
-## :pencil2: &nbsp;Notes ##
+## :pencil2: &nbsp;算法 ##
 
-- [java 容器](https://github.com/Aroue/Lee-notes/blob/master/Notes/Collection.md)   
+- [算法](https://github.com/Aroue/Lee-notes/blob/master/docs/notes/Algorithm.md)
 
-- [算法](https://github.com/Aroue/Lee-notes/blob/master/Notes/Algorithm.md)
+## 🎨 系统设计 ##
+
+- [设计模式](https://github.com/Aroue/Lee-notes/blob/master/docs/notes/Design-pattern.md)   
+
+
 
