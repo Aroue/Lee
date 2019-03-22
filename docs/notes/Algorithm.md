@@ -290,7 +290,18 @@ private static int partition(Comparable[] a, int lo, int hi) {
 - 任意节点小于（或大于）它的所有后裔，最小元（或最大元）在堆的根上（**堆序性**）。
 - 堆总是一棵[完全树](https://zh.wikipedia.org/wiki/%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91)。即除了最底层，其他层的节点都被元素填满，且最底层尽可能地从左到右填入。
 
-#### 2.二叉堆的上浮/下沉
+#### 2.堆的构造
+
+无序数组堆的构建最直接的是从左至右遍历数组进行上浮操作，另一个更高效的方法是从右至左执行下沉操作，如果一个节点的两个节点都已经是堆有序，那么进行下沉操作可以使得这个节点为根节点的堆有序。叶子节点不需要进行下沉操作，可以忽略叶子节点的元素，因此只需要遍历一半的元素即可。
+
+```java
+for (int k = N / 2; k >= 1; k--)
+     sink(nums, k, N);
+```
+
+
+
+#### 3.堆的上浮/下沉
 
 在堆中，若子节点大于父节点大，则交换两个节点的位置，但是当前节点还是可能比父节点的大，所以需要一直重负比较和交换操作，这种操作叫做上浮
 
@@ -315,5 +326,42 @@ private void sink(int k) {
             k = j;
         }
     }
+```
+
+#### 4.堆排序
+
+交换堆顶元素和最后一个元素，然后执行下沉操作维持堆的有序状态；每一个交换，相当于一次选择，类似于选择排序中的选择选择。
+
+```java
+public class HeapSort<T extends Comparable<T>> extends Sort<T> {
+
+    public void sort(T[] nums) {
+        int N = nums.length - 1;
+        for (int k = N / 2; k >= 1; k--)
+            sink(nums, k, N);
+
+        while (N > 1) {
+            exch(nums, 1, N--);
+            sink(nums, 1, N);
+        }
+    }
+
+    private void sink(T[] nums, int k, int N) {
+        while (2 * k <= N) {
+            int j = 2 * k;
+            if (j < N && less(nums, j, j + 1))
+                j++;
+            if (!less(nums, k, j))
+                break;
+            exch(nums, k, j);
+            k = j;
+        }
+    }
+
+    private boolean less(T[] nums, int i, int j) {
+        return nums[i].compareTo(nums[j]) < 0;
+    }
+}
+
 ```
 
