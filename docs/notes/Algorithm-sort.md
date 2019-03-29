@@ -7,15 +7,18 @@ public abstract class Sort
     // 返回两个数中较小的数
     public boolean less(Comparable v, Comparable w)
     {  return v.compareTo(w) < 0;  }
+  
     // 交换数组中的两个元素
     public void exch(Comparable[] a, int i, int j)
     {  Comparable t = a[i]; a[i] = a[j]; a[j] = t;  }
+  
     // 在单行中打印数组
     private static void show(Comparable[] a) { 
         for (int i = 0; i < a.length; i++)
             StdOut.print(a[i] + " ");
         StdOut.println();
     }
+  
     // 测试数组元素是否有序
     public static boolean isSorted(Comparable[] a) { 
         for (int i = 1; i < a.length; i++)
