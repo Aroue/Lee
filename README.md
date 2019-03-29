@@ -10,7 +10,7 @@
 
 ## :pencil2: &nbsp;算法 ##
 
-- [算法](https://github.com/Aroue/Lee-notes/blob/master/docs/notes/Algorithm.md)
+- [算法](https://github.com/Aroue/Lee-notes/blob/master/docs/notes/Algorithm-menu.md)
 
 ## 🎨 系统设计 ##
 
