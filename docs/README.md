@@ -1,6 +1,6 @@
 ##  ✏️ 算法 ##
 
->  [算法](notes/Algorithm-menu.md)
+>  [算法](notes/Algorithm-menu1.md)
 
 ## 🎨 系统设计 ##
 
