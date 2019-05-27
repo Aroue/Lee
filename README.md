@@ -8,13 +8,5 @@
   For you, a thousand times over.
 </p>
 
-## :pencil2: &nbsp;算法 ##
-
-- [算法](https://github.com/Aroue/Lee-notes/blob/master/docs/notes/Algorithm-menu.md)
-
-## 🎨 系统设计 ##
-
-- [设计模式](https://github.com/Aroue/Lee-notes/blob/master/docs/notes/Design-pattern.md)   
-
 
 
