@@ -7,6 +7,3 @@
 <p align="center">
   For you, a thousand times over.
 </p>
-
-
-
