@@ -4,8 +4,9 @@
 
 > For you, a thousand times over.
 
-* 算法、leetcode
-* 操作系统、网络协议、数据结构
+* 算法
+* leetcode、数据结构
+* 操作系统、网络协议、
 * ...
 
 [GitHub](https://github.com/Aroue/Lee)
