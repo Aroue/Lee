@@ -8,6 +8,6 @@
 
 >  [设计模式](notes/Design-pattern.md)
 
-## :building_construction:  Java ##
+## 🏗 Java ##
 > [java 容器](notes/JAVA-Collection.md)
 
