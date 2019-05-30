@@ -106,3 +106,13 @@ private static class Node<E> {
 
 ### 1.HashMap
 
+[HashMap实现原理及源码分析](https://www.cnblogs.com/chengxiao/p/6059914.html)
+
+HashMap是基于哈希表实现的，哈希表在不考虑哈希冲突的情况下，在哈希表中进行添加，删除，查找等操作，性能十分之高，仅需一次定位即可完成，时间复杂度为O(1)，`哈希表的主干就是数组`。
+
+HashMap 内部实现所用存储结构：
+
+```java
+transient Node<K,V>[] table;
+```
+
