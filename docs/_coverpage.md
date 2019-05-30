@@ -4,9 +4,8 @@
 
 > For you, a thousand times over.
 
-* Algorithm
-* computer system
-* Computer Networks
+* 算法、leetcode
+* 操作系统、网络协议、数据结构
 * ...
 
 [GitHub](https://github.com/Aroue/Lee)
