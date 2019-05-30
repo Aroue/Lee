@@ -6,6 +6,6 @@
 
 >  [设计模式](notes/Design-pattern.md)
 
-## :building_construction: Java ##
+## :building_construction:  Java ##
 > [java 容器](notes/JAVA-Collection.md)
 
