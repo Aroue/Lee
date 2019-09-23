@@ -10,11 +10,11 @@
 
 ## 🏗 Java
 
-> [java 容器](notes/JAVA 容器.md)
+> [java 容器](notes/JAVA容器.md)
 >
-> [java 并发](notes/JAVA 并发.md)
+> [java 并发](notes/JAVA并发.md)
 >
-> [java 虚拟机](notes/JAVA 虚拟机.md)
+> [java 虚拟机](notes/JAVA虚拟机.md)
 
 
 
