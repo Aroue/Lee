@@ -10,7 +10,7 @@
 
 ## 🏗 Java
 
-> [java 容器](notes/JAVA-Collection.md)
+> [java 容器](notes/JAVA 容器.md)
 >
 > [java 并发](notes/JAVA 并发.md)
 >
