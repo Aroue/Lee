@@ -5,6 +5,8 @@
 >  [Leetcode刷题解析](notes/leetcode.md)
 >
 >  [剑指offer](notes/剑指offer.md)
+>
+>   [编程技巧](notes/编程技巧.md) 
 
 
 
