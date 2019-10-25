@@ -62,8 +62,6 @@ public int NumberOf1(int n) {
 
 
 
-
-
 ```java
 public double Power(double base, int exponent) {
         
@@ -229,6 +227,120 @@ public ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
 
 
 
+
+
+###第一个只出现一次的字符位置
+
+#### 题目描述
+
+在一个字符串中找到第一个只出现一次的字符，并返回它的位置。
+
+```html
+Input: abacc
+Output: b
+```
+
+```java
+public int FirstNotRepeatingChar(String str) {
+    int[] cnts = new int[256];
+    for (int i = 0; i < str.length(); i++)
+        cnts[str.charAt(i)]++;
+    for (int i = 0; i < str.length(); i++)
+        if (cnts[str.charAt(i)] == 1)
+            return i;
+    return -1;
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###不用加减乘除做加法
+
+####题目描述
+
+写一个函数，求两个整数之和，要求不得使用 +、-、*、/ 四则运算符号。
+
+#### 解题思路
+
+a ^ b 表示没有考虑进位的情况下两数的和，(a & b) << 1 就是进位。
+
+递归会终止的原因是 (a & b) << 1 最右边会多一个 0，那么继续递归，进位最右边的 0 会慢慢增多，最后进位会变为 0，递归终止。
+
+```java
+public int Add(int a, int b) {
+    return b == 0 ? a : Add(a ^ b, (a & b) << 1);
+}
+```
+
+
+
+###数组在排序数组中出现的次数
+
+```html
+Input:
+nums = 1, 2, 3, 3, 3, 3, 4, 6
+K = 3
+
+Output:
+4
+```
+
+```java
+public int GetNumberOfK(int[] nums, int K) {
+    int first = binarySearch(nums, K);
+    int last = binarySearch(nums, K + 1);
+    return (first == nums.length || nums[first] != K) ? 0 : last - first;
+}
+
+private int binarySearch(int[] nums, int K) {
+    int l = 0, h = nums.length;
+    while (l < h) {
+        int m = l + (h - l) / 2;
+        if (nums[m] >= K)
+            h = m;
+        else
+            l = m + 1;
+    }
+    return l;
+}
+```
+
+
+
+
+
+###数组中只出现一次的数字
+
+####题目描述
+
+一个整型数组里除了两个数字之外，其他的数字都出现了两次，找出这两个数。
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 62、二叉查找树的第K个节点
 
 #### 题目描述
@@ -261,8 +373,6 @@ public class Solution {
     }
 }
 ```
-
-
 
 
 
